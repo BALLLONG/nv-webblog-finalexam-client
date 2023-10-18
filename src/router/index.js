@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import CarIndex from '@/components/Cars/Index'
-import CarEdit from '@/components/Cars/EditUser'
-import CarShow from '@/components/Cars/ShowUser'
-import CarCreate from '@/components/Cars/CreateUser'
+import CarEdit from '@/components/Cars/EditCar'
+import CarShow from '@/components/Cars/ShowCar'
+import CarCreate from '@/components/Cars/CreateCar'
 
 Vue.use(Router)
 

@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h1>Edit Users</h1>
     <h1>Edit User</h1>
     <form v-on:submit.prevent="editUser">
       <p>category: <input type="text" v-model="user.category" /></p>
@@ -9,7 +8,6 @@
       <p>color: <input type="text" v-model="user.color" /></p>
       <p>lc_plate: <input type="text" v-model="user.lc_plate" /></p>
       <p>chasis_no: <input type="text" v-model="user.chasis_no" /></p>
-      <p><button type="submit">create car</button></p>
       <p><button type="submit">edit user</button></p>
     </form>
     <hr />
