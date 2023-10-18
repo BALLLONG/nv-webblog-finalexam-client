@@ -1,33 +1,33 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import UserIndex from '@/components/Users/Index'
-import UserEdit from '@/components/Users/EditUser'
-import UserShow from '@/components/Users/ShowUser'
-import UserCreate from '@/components/Users/CreateUser'
+import CarIndex from '@/components/Cars/Index'
+import CarEdit from '@/components/Cars/EditUser'
+import CarShow from '@/components/Cars/ShowUser'
+import CarCreate from '@/components/Cars/CreateUser'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
-      path: '/user/create',
-      name: 'user-create',
-      component: UserCreate
+      path: '/car/create',
+      name: 'car-create',
+      component: CarCreate
     },
     {
-      path: '/user/edit/:userId',
-      name: 'user-edit',
-      component: UserEdit
+      path: '/car/edit/:carId',
+      name: 'car-edit',
+      component: CarEdit
     },
     {
-      path: '/user/:userId',
-      name: 'user',
-      component: UserShow
+      path: '/car/:carId',
+      name: 'car',
+      component: CarShow
     },
     {
-      path: '/users',
-      name: 'users',
-      component: UserIndex
+      path: '/cars',
+      name: 'cars',
+      component: CarIndex
     },
 
     

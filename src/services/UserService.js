@@ -1,18 +1,18 @@
 import Api from '@/services/Api'
 export default {
     index(search) {
-        return Api().get('users')
+        return Api().get('http://10.10.59.14:8081/cars')
     },
-    show(userId) {
-        return Api().get('user/' + userId)
+    show(carId) {
+        return Api().get('http://10.10.59.14:8081/car/carId' + carId)
     },
-    post(user) {
-        return Api().post('user', user)
+    post(car) {
+        return Api().post('http://10.10.59.14:8081/car', car)
     },
-    put(user) {
-        return Api().put('user/' + user.id, user)
+    put(car) {
+        return Api().put('http://10.10.59.14:8081/car/carId' + car.id, car)
     },
-    delete(user) {
-        return Api().delete('user/' + user.id, user)
+    delete(car) {
+        return Api().delete('http://10.10.59.14:8081/car/carId' + car.id, car)
     },
 }

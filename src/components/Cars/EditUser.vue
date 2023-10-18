@@ -3,18 +3,23 @@
     <h1>Edit Users</h1>
     <h1>Edit User</h1>
     <form v-on:submit.prevent="editUser">
-      <p>name: <input type="text" v-model="user.name" /></p>
-      <p>lastname: <input type="text" v-model="user.lastname" /></p>
-      <p>email: <input type="text" v-model="user.email" /></p>
-      <p>password: <input type="text" v-model="user.password" /></p>
+      <p>category: <input type="text" v-model="user.category" /></p>
+      <p>engine_capacity: <input type="text" v-model="user.engine_capacity" /></p>
+      <p>brand: <input type="text" v-model="user.brand" /></p>
+      <p>color: <input type="text" v-model="user.color" /></p>
+      <p>lc_plate: <input type="text" v-model="user.lc_plate" /></p>
+      <p>chasis_no: <input type="text" v-model="user.chasis_no" /></p>
+      <p><button type="submit">create car</button></p>
       <p><button type="submit">edit user</button></p>
     </form>
     <hr />
     <div>
-      <p>name: {{ user.name }}</p>
-      <p>lastname: {{ user.lastname }}</p>
-      <p>email: {{ user.email }}</p>
-      <p>password: {{ user.password }}</p>
+      <p>category: {{ user.category }}</p>
+      <p>engine_capacity: {{ user.engine_capacity }}</p>
+      <p>brand: {{ user.brand }}</p>
+      <p>color: {{ user.color }}</p>
+      <p>lc_plate: {{ user.lc_plate }}</p>
+      <p>chasis_no: {{ user.chasis_no }}</p>
       <p></p>
     </div>
   </div>
